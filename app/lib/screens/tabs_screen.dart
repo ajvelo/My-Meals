@@ -1,5 +1,6 @@
 import 'package:app/screens/categories_screen.dart';
 import 'package:app/screens/favorites_screen.dart';
+import 'package:app/widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
 
 class TabsScreen extends StatelessWidget {
@@ -26,6 +27,9 @@ class TabsScreen extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             title: Text('My Meals'),
+          ),
+          drawer: Drawer(
+            child: MainDrawer(),
           ),
           bottomNavigationBar: menu(context),
           body: TabBarView(
