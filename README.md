@@ -77,7 +77,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-Follow the steps on [flutter dev](https://flutter.dev/https://flutter.dev/) to install the Flutter SDK
+Follow the steps on [flutter dev](https://flutter.dev/) to install the Flutter SDK
 
 ### Installation
 
