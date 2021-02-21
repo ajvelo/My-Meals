@@ -1,9 +1,14 @@
+import 'package:app/models/meal.dart';
 import 'package:app/screens/categories_screen.dart';
 import 'package:app/screens/favorites_screen.dart';
 import 'package:app/widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
 
 class TabsScreen extends StatelessWidget {
+  final List<Meal> favoriteMeals;
+
+  TabsScreen(this.favoriteMeals);
+
   Widget menu(BuildContext context) {
     final deviceHeight = MediaQuery.of(context).size.height;
     return Container(
@@ -35,7 +40,7 @@ class TabsScreen extends StatelessWidget {
           body: TabBarView(
             children: [
               CategoriesScreen(),
-              FavoritesScreen(),
+              FavoritesScreen(favoriteMeals),
             ],
           ),
         ));
